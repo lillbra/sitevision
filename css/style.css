@@ -114,6 +114,7 @@ body{
     background-color: #d6c2bb;
     background-image: url(../img/ros.png);
     background-origin: content-box;
+    background-repeat: no-repeat;
     margin-bottom:50px;
     position: relative;
   }
