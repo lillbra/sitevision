@@ -75,8 +75,9 @@ body{
 
 @media only screen and (max-width: 35em) {
     header{
-        background:#d6c2bb;
+        background: url(../img/index.jpg) no-repeat left center;
         color: #fff;
+        background-size: 100%;
         border-bottom:1px solid #fff;
     }
     h1{
@@ -86,9 +87,10 @@ body{
         font-style:italic;
         font-family: 'Great Vibes', cursive;
     }
-    #main img{
-        width:100%;
+    img{
+        width:95%;
         display:block;
+        margin: 0 auto 1em auto;
     }
     p, h2{
         margin-left:.5em;
@@ -97,8 +99,8 @@ body{
     nav a{
         display:block;
         padding: 10px;
-        border-bottom: 1px solid #d6c2bb;
-        background: #fbf7f3;
+        border-bottom: 1px solid #fff;
+        background: #efefef;
         text-decoration: none;
     }
     nav a:hover, nav a:focus, nav a:active{
