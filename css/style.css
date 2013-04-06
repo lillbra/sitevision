@@ -9,8 +9,6 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
 a { color: #444; }
 a:visited { color: #444; }
@@ -20,6 +18,9 @@ a:hover, a:active { outline: 0; }
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
 blockquote { margin: 1em 40px; }
+p{
+  margin-top:0;
+}
 dfn { font-style: italic; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 ins { background: #ff9; color: #000; text-decoration: none; }
@@ -66,6 +67,7 @@ td { vertical-align: top; }
 
 body{
     color:#444;
+    background: #fefefe;
 }
 
 
@@ -82,6 +84,7 @@ body{
         padding:0.5em;
         font-weight: normal;
         font-style:italic;
+        font-family: 'Great Vibes', cursive;
     }
     #main img{
         width:100%;
@@ -105,65 +108,72 @@ body{
 
 
 @media only screen and (min-width: 35em) {
-
-  header{
-    text-align:right;
-    height:200px;
-    overflow: hidden;
-    background-size: 100% auto;
-    background-color: #d6c2bb;
-    background-image: url(../img/ros.png);
-    background-origin: content-box;
-    background-repeat: no-repeat;
-    margin-bottom:50px;
-    position: relative;
-  }
-  header span{
-    display:none;
+  body{
+    padding:0 50px;
   }
   h1{
-    font-size:4em;
-    font-family: 'Parisienne', cursive;
-    margin:0;
-    color:#fff;
-    position: absolute;
-    bottom:0px;
-    right:50px;
+    margin-top:0;
     font-weight: normal;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    margin-bottom: .2em;
   }
-  nav{
-    max-width:600px;
-    margin:0 auto;
-    font-family: 'Parisienne', cursive;
-    font-size: 2em;
-    text-align: center;
+  .wrapper{
+    background: #fff;
+    max-width: 900px;
+    border:1px solid #eee;
+    margin: 2% auto auto auto;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 15px 0px #ddd;
+    box-shadow: 0px 0px 15px 0px #ddd;
+
   }
-  nav ul{
-    display:inline-block;
+  .start{
+    background: url(../img/index.jpg) no-repeat center center;
+    overflow:hidden;
+    min-height: 600px;
+    text-shadow: 1px 1px 3px #3e536b;
+    font-size: 1.5em;
   }
-  nav a,
-  nav a:visited{
-    color:#444;
-    text-decoration: none;
-    display:block;
-    padding:10px;
-    cursor:pointer;
+    .start h1{
+        color: #fff;
+        text-align: right;
+        padding: 40px 40px 0 0;
+    }
+    .start nav{
+      float: right;
+      margin-right: 100px;
+    }
+    .start a{
+      text-decoration: none;
+      color: #fff;
+    }
+    .start a:hover{
+      color: #eee;
+    }
+  article{
+    padding: 30px;
   }
-  nav a:hover,
-  nav a:active,
-  nav a:focus{
-    color:#999;
+    article h1{
+      text-align: center;
+      margin-bottom: .5em;
+      text-shadow: 1px 1px 3px #777;
+    }
+  .columns{
+    overflow: hidden;
   }
-  #main{
-    max-width:600px;
-    margin:0 auto;
-    padding-bottom:50px;
-  }
-  h2{
-    font-family: 'Parisienne', cursive;
-     color:#444;
-     font-size: 2em;
-     font-weight: normal;
+    .col1{
+      float:right;
+      width: 45%;
+    }
+    .col2{
+      margin-right: 4%;
+      width: 50%;
+      float:right;
+    }
+  img{
+    display: block;
+    width:100%;
   }
 
 }
@@ -179,13 +189,13 @@ body{
 .clearfix { *zoom: 1; }
 
 @media print {
-  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } 
+  thead { display: table-header-group; }
   tr, img { page-break-inside: avoid; }
   img { max-width: 100% !important; }
   @page { margin: 0.5cm; }
