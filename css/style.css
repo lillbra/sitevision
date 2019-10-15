@@ -75,7 +75,7 @@ body{
 
 @media only screen and (max-width: 35em) {
     header{
-        background: url(../img/index.jpg) no-repeat left center;
+        background: #000;
         color: #fff;
         background-size: 100%;
         border-bottom:1px solid #fff;
