@@ -131,7 +131,7 @@ body{
 
   }
   .start{
-    background: url(../img/index.jpg) no-repeat center center;
+    background: #000;
     overflow:hidden;
     min-height: 600px;
     text-shadow: 1px 1px 3px #3e536b;
